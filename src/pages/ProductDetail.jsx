@@ -48,7 +48,7 @@ const ProductDetail = () => {
 
   const getProductDetail = async () => {
     setLoading(true); //데이터가 로딩중이니까 true로 준다
-    const url = `http://localhost:3000/products/${id}`; //http://localhost:3000/products/1 원래 이걸로 값을 주는 데 아이디 값을 변수를 이용해서 유연하게 만들어주었다
+    const url = `https://my-json-server.typicode.com/junghwichan3436/react-shop/products/${id}`; //http://localhost:3000/products/1 원래 이걸로 값을 주는 데 아이디 값을 변수를 이용해서 유연하게 만들어주었다
     const response = await fetch(url);
     const data = await response.json();
     setLoading(false); //여기까지 왔다면 로딩이 끝났다라고 판단한다
